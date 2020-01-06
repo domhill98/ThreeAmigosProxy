@@ -12,7 +12,7 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '9b63e41e-97bc-4af5-9833-b6bb7c1b20f0'
   imageRepository: 'threeamigosereverseproxy'
-  containerRegistry: 'msproducts.azurecr.io'
+  containerRegistry: 'threeamigosreg.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
   
