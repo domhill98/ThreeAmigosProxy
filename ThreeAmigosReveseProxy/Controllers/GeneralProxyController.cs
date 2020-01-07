@@ -16,9 +16,24 @@ namespace ThreeAmigosReveseProxy.Controllers
         [Route("Products")]
         public ActionResult RerouteProductsPage()
         {
-            string uri = "https://msproductsfrontend.azurewebsites.net/";
+            string uri = "https://msproductsfe.azurewebsites.net/";
             return Redirect(uri);
         }
+
+        [Route("Products/Review/{prodID}")]
+        public ActionResult RerouteProductsReviewPage(Guid prodID)
+        {
+            if(prodID == Guid.Empty) 
+            {
+                return BadRequest();
+            }
+
+            string uri = "https://msproductsfe.azurewebsites.net/" + prodID;
+            return Redirect(uri);
+        }
+
+
+
         #endregion
 
         #region Orders
