@@ -14,7 +14,7 @@ namespace ThreeAmigosReveseProxy.Controllers
         [Route("Staff")]
         public ActionResult RerouteStaffPage()
         {
-            string uri = "https://localhost:44317/staff/";
+            string uri = "https://thamco-staffmanagement.azurewebsites.net/Staff?";
             return Redirect(uri);
         }
         #endregion

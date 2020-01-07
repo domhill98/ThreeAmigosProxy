@@ -59,14 +59,14 @@ namespace ThreeAmigosReveseProxy.Controllers
         [Route("NewProduct/CreateSearch")]
         public ActionResult RerouteCreateSearchPage()
         {
-            string uri = "https://localhost:44353/NewProduct/CreateSearch/";
+            string uri = " https://thamco-newproductrequest.azurewebsites.net/NewProduct/CreateSearch/";
             return Redirect(uri);
         }
 
         [Route("NewProduct")]
         public ActionResult RerouteNewProductsPage()
         {
-            string uri = "https://localhost:44353/NewProduct/";
+            string uri = "https://thamco-newproductrequest.azurewebsites.net/NewProduct/";
             return Redirect(uri);
         }
 
